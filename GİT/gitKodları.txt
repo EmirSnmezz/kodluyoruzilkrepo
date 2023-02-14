@@ -1,0 +1,67 @@
+git init -> ilk defa projeyi oluştururken initilaze etme komutumuzdur.Bu komut sayesinde proje dosyamız içerisinde .git uzantılı bir klasör oluşturur ve projemizin versiyonlanma işlemini başlatmış oluruz.Yani henüz versiyon kontrolü altında olmayan bir projenin dizininde boş bir git deposu oluşturmak için kullanılır.
+
+git config -> GIT'in bir çok konfigürasyon ayarı vardır.Bunlardan ikisi user.name ve user.email olanıdır.Bu ayarları yapılandırmak için git config --global 
+user.name ve git config --global user.email komutlarını kullanırız.Burada yazdığımız isim ve email GitHub ve benzeri platformlara commit attığımızda da görüneceği için dikkatli seçmek lazım.
+
+Bu ayarların bütünün görmek için git config --list komutu kullanılır.
+
+git add dosyaAdi.uzanti-> herhangi bir dosyayı ya da klasörü versiyon kontrol sisteminde takip için eklememizi/takibe almamızı sağlar.(DosyaAdi.uzanti dosyasını takibe ekler )
+
+git rm --cached dosyaAdi.uzanti/klasörAdi -> Staged ortamına eklenmiş bir dosyanın takibinin bırakılması yani untracked(izlenmeyen) hale getirilmesini sağlayan komuttur.
+
+
+git status -> üzerinde çalışılan projenin o anki durumu hakkında bilgi verir.Yapılan değişiklikler,eklenen ve silinen dosyalar gibi bilgiler listelenir.
+
+git commit -m 'Commit mesajı' -> Commit,staged ortamına alınan dosyaların Local Repository'e gönderilmesidir.En iyi uygulama yöntemi,her değişiklik sırasında yapılan değişikleikleri açıklayıcı bir mesaj eklemektir.Ayrıca her commit benzersiz bir kimliğe (unique ID) sahip olur.Bu sayede eski bir commite geri dönebiliriz.Herhangi bir kayıp yaşamayız
+
+
+
+git diff -> Bütün olan değişiklikleri yani en sondan bir öncekinden en sondaki committe kadar olan yani en son eklenen değişiklikleri gösterir.
+
+
+git log -> projedeki commit geçmişini görüntülememizi sağlar.Tüm commitlerin id'si yazarı tarihi ve mesajı ile beraber listelenir.
+
+git branch -> Local veya remote repository üzerinde yeni bir branch (dal) eklemek,silmek veya listelemek için kullanılır .
+
+yeni bir branch eklemek için : git branch branchName 
+
+Tüm uzak ve yerel branch'leri listelemek için : git branch -a
+
+bir branch silmek için git branch -d branchName
+
+
+git checkout -> Branchler arası veya commitler arası geçiş yapmak için kullanılır.
+
+mevcutta var olan branch'e geçiş yapmak için : git checkout branchName
+
+yeni bir branch oluşturup geçiş yapmak için git checkout -b branchName
+
+commitler arası geçiş yapmak için git checkout commitID
+
+
+git merge -> başka bir branch'de bulunan değişiklikleri bulunduğumuz branch ile birleştirmek istediğimizde kullanılır.
+
+git clone -> Mevcut bir Remote Repository'de bulunan dosyaları bilgisayarımızda bir kopyasını oluşturulmasını sağlar. 
+
+örn: git clone remoteURL
+
+git push projemizde aldığımız commitleri,remote repositoriye gönderir.
+
+örn : git push origin master
+**burada bahsi geçen origin,remote repository'nin kök dizinini belirtir ve sabit bir isimidir.master ise sizin çalıştığınız branch'i belirtir.
+
+
+** Henüz remote repository'nizi git e bağlamadıysanız aşşağıdaki komut ile remote repository'nizi git'e bağlayabilirsiniz. 
+
+örn:git remote add origin http://uzak_deponun_adresi.falanfilan
+
+
+git diff -> Repository üzerinde yapılan değişikliklerden sonra dosyalar arasında oluşan farklılıkları gösterir.
+
+çalışma dizini ile repository (HEAD) arasındaki farklılıkları görmek için ;
+**-> git diff HEAD 
+
+iki commit arasındaki farklılıkları görmek için ;
+**-> git diff commitID1..commitID2
+
+çalışma dizini ve staged oramu arasındaki farklılıkları görmek için git diff --staged

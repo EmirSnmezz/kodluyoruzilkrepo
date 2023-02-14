@@ -1,0 +1,116 @@
+ MarkDown 2004 yılında yapılmıştır ve oldukça popüler olarak kullanılmaktadır.
+ 2004 yılından beri MarkDown bir standarttır ve bu standartla beraber MarkDown özellikleri bir çok yazılım dilinde kullanılmaktadır.
+
+ Python dilinde proje geliştirsek bile MarkDown çeviriciler ile python diline adapte edilebilmektedir.
+ 
+ 
+ Html gibi metin işaretlememize yarayan bir özel formattır.Html gibi element aç kapa etiket aç kapa zahmetinden bizi kurtarır.Çok da basi bir kullanımı vardır.
+
+ GitHub'da ReadMe.MD dosyası oluşturmak için değil,şunlar için de MarkDown dosyaları kullanılabilir;
+
+Dijital ortamda bir yazı yazmak istediğimizde (makale,blog yazısı vb..) yazının akışına uygun olarak bazı görsel biçimler (başlık,liste,tablo gibi ) kullanmak isteriz.Bu durumda HTML elbette iş görmektedir.Ancak,bir yazı düzenlemesi için biraz uğraş (etiket aç kapa element aç kapa gibi ) gerektirir ve hatalara sebebiyet verebilir.Bu amaçla çeşitli editörlerde metinler yazılmakta ve HTML'e dönüştürülmesi sağlanmaktadır.Örnek olarak WordPress metin editörü düşünülebilir.Diğer yandan 2004 yılından bu yana hayatımızda olan,ancak özellikle GitHub ve ardından modern içerik yönetim sistemleriyle birlikte kullanımı yaygınlaşan,okunması ve yazması kolay düz metin formatı da mevuttur ; MARKDOWN 
+
+MarkDown,en basit tanımı ile web yazarları için text-to-html (metinden html'e ) dönüştürme aracıdır.MarkDown tasarımının temel hedefi geliştiricileri tarafından okunabilirlik olarak belirtilmektedir.Bu amaçla e-posta yazımı temelinde ağırlık göstermektedir.
+
+Daha detaylı bir tanım olarak,düz metin biçimlendirme sözdizimine (syntax) sahip hafif bir düz metin biçimlendirme dili olarak ifade edilebilir.Aynı isimli araç sadece HTML dilini desteklese de günümüzde pek çok formatta çıktı üretmek için kullanılmaktadır.
+
+Bu bağlamda MarkDown şudur ; 
+
+düz bir metin biçimlendirme söz dizimi 
+perl ile yazılmış,düz metin biçimlendirmesini HTML'e dönüştüren bir yazılım aracı.
+
+
+
+MarkDown editörü olarak typora web sitesi yaygın ve etkin bir şekilde kullanılmaktadır.
+Yazdığımız her şeyi MarkDown'dan normal metine çevirebiliyor.
+
+MarkDown'da temel 4 yapı vardır ; 
+
+bu 4 temel yapıyı öğrendikten sonra çok etkin bir şekilde MarkDown'u kullanabilir,çok güzel şeyler üretebiliriz.
+
+# (diyez) -> Başlık olarak tutacağımız bir metnin başına  # diyez koyarsak bu metin başlık (tek diyez ise h1 başlık ) olur.Diyez # sayısını arttırdıkça başlık küçülüyor 
+
+
+
+# metin -> h1  metin yazısı 
+
+## metin -> h2  metin yazısı 
+
+### metin -> h3  metin yazısı 
+
+                 .
+
+                 .
+
+                 .
+
+                 .
+
+                 .
+
+                 .
+
+###### Metin -> h6 Metin Yazısı 
+
+
+
+- veya * ;
+
+-(tire) / * (yıldız)  -> liste elemanı tanımlamamızı sağlar 
+
+-list item1
+
+-list item2
+
+-list item3
+
+-list item4 
+ 
+
+link : 
+
+MarkDown'da link belirtmek için ;
+
+MarkDown'da linkin iki tane kısmı vardır.Bunlar ; 
+
+1- linkin açıklaması 
+2- linkin kendisi 
+
+[Metin] (url) 
+
+burada metin linkin açıklaması,url ise linkin kendisidir.
+
+örn: 
+[kodluyoruz] (https://www.kodluyoruz.org)
+
+
+MarkDown ile italic metin yazma ; 
+
+*metin* -> şeklinde italic font ile yazmak istediğimiz metinin başına ve sonuna 1'er tane yıldız eklersek metni italic olarak yazarız
+
+
+MarkDown ile bold metin yazma 
+
+**Metin** -> şekline bold olarak yazmak istediğimiz metnin başına ve sonuna 2'şer tane yıldız eklersek metni bold font ile yazarız.
+
+
+MarkDown ile bold italic metin ; 
+
+***Metin*** -> şeklinde bir metni hem bold hem italic olarak yazmak istersek metnin başına ve sonuna 2'şer yane yıldız eklersek metni bolditalic font ile yazarız
+
+
+MarkDown yapısında image (resim) eklemek için ; 
+
+![Metin](resimurl/path)  şeklinde MarkDown yapısında image belirtebiliriz,çok tanıdık geldi dimi,çünkü bu yapı link verme yapısının başında ünlem (!) olan halidir.Yani link verme yapısının başına ünlem koyarak MarkDown ile image (resim) ekleyebiliriz.
+
+
+MarkDown ile sayfayı bölmek (çizgi çekmek) (html'deki br ) 
+
+Oluşturduğumuz sayfayı yatay bir çizgi ile birden fazla alana bölmek istersek yani html'deki br yi uygulamak istersek bu br etiketinin MarkDown 'da karşılığı tire (-)'dir. 3 ve 3 ten fazla tire koyarsak (en az 3 olması gerek) sayfamızı tıpkı html'deki br gibi birden fazla alana yatay çizgi ile bölebiliriz.
+
+örn; 
+
+[lorem](link) 
+----------------------------------------------------------------------------------
+yukarıdaki tireler md viewer'da mesela typora'da düz bir çizgi olarak yani html'deki br gibi gözükecektir.
+ 

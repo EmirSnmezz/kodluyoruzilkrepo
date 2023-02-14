@@ -1,0 +1,35 @@
+Linux 'un mimarı Linus Torvalds tarafından çok sayıda kişi ile birlikte linux çekirdeğini geliştirirken pojenin yönetimi için o dönem piyasada bulunan BitKeeper adındaki versiyon kontrol sistemini tercih etmiştir.Fakat BitKeeper'in telif haklarını elinde bulunduran kişi ile yaşanan yasal sorundalrdan ötürü bu kullanımdan vazgeçilmiştir.O günlerde piyasada bulunan versiyon kontrol sistemlerinin hiçbiri aslında Torvalds'ın beklentilerini karşılamıyormuş.Bu sebeple ihtiyaçlarına çözüm için kolları sıvayan Torvalds,piyasadaki sistemleri inceleyerek kendi versiyon kontrol sistemini yazmaya başlamış.
+
+Git Nedir ? 
+
+Git bir versiyon kontrol sistemidir.
+Versiyon kontrol sistemi,bir döküman(Yazılım projesi,ofis belgesi vb..) üzerinde yaptığınız değişiklikleri adım adım izleyen,istediğinizde kayıt eden ve bunu istersek internet üzerinde uzaktaki bir bilgisayarda veya yerel bir cihazda (repository/repo) saklamanızı ve yönetmenizi sağlayan bir sistemdir.
+
+
+Git bize ;
+
+birden fazla yerde (Dağıtık olarak) dosyalarınızı ve versiyon kontrol bilgilerimizi depolamammızı sağlar.Böylelikle cihaz bağımsız olarak dosyalarımıza erişebiliriz.
+
+commit 'SnapShot'özelliği ile istediğimiz zaman proje veya dosyaların o anki halini kayıt altına alabiliriz.Böylelikle ileride bir hata ile karşılaşmamız durumunda projemizin herhangi bir zamandaki haline (versiyonuna ) dönüş yapabiliriz.
+
+SnapShot yapıldıktan sonra değişiklik yapılan dosyaları görebiliriz.
+
+Takımların aynı projede beraber çalışmasına izin verir.Kim neyi düzenledi ne ekledi , ne çıkarttı son değişiklik ne zaman yapıldı gibi bilgilere erişebiliriz.Bu sayede topluluk ile proje geliştirme süreçlerini kolaylaştırabiliriz.
+
+projede versiyonlanmasını istemediğimiz dosyaları belirtebiliriz.
+
+
+
+Git'in yapısı;
+
+Git 4 farklı yapıdan oluşur.Bunlar; 
+
+Working Area  -> çalışma alanımız / Çalışma dosyamızdır
+
+Staging Area  -> Commitlenmeye hazır ancak local repositoriye henüz aktarılmamış(commitlenmemiş) çalışma versiyonlarımızdır.Yani dosyaların izlenmeye başlandığı alandır 
+
+Local Repository -> tüm commitlerin tutulduğu bölgedir.Staging Area içindeki tüm değişiklikler commit komutu ile Local Repository'e gelir
+
+Remote Repository-> Commitlenöiş değişikliklerin tutulduğu alandır.Kod remote repositoriye geldikten sonra diğer geliştiriciler bu kodları görebilir ve değiştirebilir.
+
+
