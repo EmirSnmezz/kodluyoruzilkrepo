@@ -2,7 +2,7 @@
 
 # Kodluyoruz Ilk Repo
 
-Bu Repo [Kodluyoruz](https://kodluyoruz.org) Back-End eğitiminde oluşturduğumuz ilk repo.İçerisinde bir adet README dosyası,bi adet de index.html barındırıyor
+Bu Repo [Kodluyoruz](https://kodluyoruz.org) Back-End eğitiminde oluşturduğumuz ilk repo.İçerisinde bir adet README dosyası,bi adet de index.html  ve bir adet s.png barındırıyor
 
 #Installation
 Öncelikle projeyi clonelayın.
