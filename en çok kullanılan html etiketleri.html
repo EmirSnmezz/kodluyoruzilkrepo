@@ -1,0 +1,80 @@
+<!-- 
+HTML'de yorum satırları 
+< !--- operatörleri kullanılarak bu iki açılış ve kapanış operatörü arasında gerçekleştirilir-->
+
+<!-- 
+
+    HTML'de etiketler < (küçüktür) ve > (büyüktür) işaretleri arasına yazılarak başlar 
+    içeriği yazdıktan sonra etiketi kapatmamız gerekir,Sadece html değil programlama dillerinde de açılan etiket/blok kapatılmak zorundadır.HTML'de etiketi kapatmak için küçüktür(<) slash (/) ve büyüktür (>) şeklinde yazılmalı örn: (</etiket_adi>)
+
+    yani bir elemen açılış etiketi (<etiket>) ve kapanış etiketinin (</etiket) bütününden oluşur 
+-->
+
+<!-- HTML Etiketi -->
+
+<!--
+<html> </html> etiketi ,dosya içeriğinin html dilinde yazıldığını tarayıcımıza bildirir.Bu etiket,kendi altında(element içinde) (açılış ve kapanış etiketleri arasında) <head> </head>
+ve <body> </body> etiketlerini barındırmalıdır.Eğer bir HTML dökümanı oluşturmak istersek ilk yapacağımız iş <html> elementi (html açılış etiketi ve kapanış etiketi) oluşturmaktır.Ardından HTML etiketi altında <head> ve <body> elementlerini yazmalıyız
+
+-->
+
+<!-- head etiketi/elementi -->
+
+<!--
+<head> elementi ,site ziyaretçileri tarafından görülmesi gerekmeyen kodları içerir.Bu element içine yazılan kodlar,genellikle arama motorları ve örümcekler (Crawler ve Spider diye geçer) içindir. Head elementi altına bütün etiketleri kullanmamız mümkün değildir.Sadece web sitesinin görünmeyen ayarlarını yapan etiketleri head elementi içinde kullanabiliriz
+    
+    Bu etiketler ; 
+
+    . <title> (Bu etiketi kullanmak şarttır)
+    . <meta>
+    . <style>
+    . <script>
+    . <noscript>
+    . <link>
+    . <base> 
+
+    etiketleridir.
+-->
+
+<!--body etiketi/elementi-->
+
+<!--
+
+Body etiketi, web sayfamızda görmek istediğimiz bütün içerikleri body elementinin içine yazıyoruz.
+
+-->
+
+<!--
+    
+
+    <!DOCTYPE html > : Dökümanımızın HTML dilinde olduğunu tarayıcımıza bildiren talimattır. 
+    <html lang="en"> :site içeriğinin dilini belirten etikettir,"en" yerine "tr"yazabiliriz.
+    h etiketler (h1,h2,h3,h4,h5,h6) : h etiketleri başlık etiketleridir. h1 en büyük başlıktır,h ın yanındaki sayı arttıkça başlığın boyutu küçülür.
+
+    <p> : <p> etiketi,paragraf etiketidir.Sayfa içerisinde oluşturacağımız metinleri <p> etiketi ile oluştururuz.
+    
+    <br> : <br> etiketi,satır atlama etiketidir ve kapanmaya ihtiyaç duymayan etiketlerden biridir.Atlamak istediğimiz satır sayısı kadar <br> etiketi kullanabiliriz. NOT:br etiketinin farklı kullanımlarını görebiliriz örn:(<br>,<br/>,<br />) hepsi aynı işlevi yerine getirir.
+
+    <a> : <a> etiketinin en önemli özelliği "href" özelliğidir.Bu etiket ile sayfaları linkleyebiliriz.Etiket içersine yazılan içerik sayfa üzerinde gösterilecek içeriktir.Href içiine yazılan ise mavi yazıya tıklanıldığı zaman gidilecek URL'dir.
+
+    <ul> <ol> <li> : <ul> ve <ol> etiketleri liste oluşturma etiketleridir.Listeyi oluşturduktan sonra içeriğini oluşturmak (liste elemanı eklemek için) <li> etiketini kullanıyoruz.
+
+    <ul>: "unordered list" yani sırasız liste anlamına gelir
+    
+    <ol> :"ordered list" sıralı liste anlamına geliyor.
+
+    <strong> ve <b> : <Strong> etiketi bir metnin arama morotlarına önemli olduğunu bildirmek için kullanılır.Kullanıldığı zaman metni kalın yapar.Eğer sadece metni kalınlaştırmak istersek,arama motoruna önemli olduğunu söylemeye gerek yok dersek <b> etiketini kullanırız
+
+    <script>: <script> etiketi ,javascript kodlarını HTML içine yazabilmemizi sağlar.
+
+    <button> : <button> etiketini buton oluşturmak üzere kullanırız.Buton üzerine yazmak istediğimiz içeriği elementin içine yazmamız yeterlidir. örn :(<button> GÖNDER </button> )
+
+    <img> etiketi : <img> etiketi,HTML dosyamıza (Web sayfamıza) resim eklemek için kullanılır.<img src="resim.jpg" alt ="Açıklama yazısı />" şeklinde kullanılır
+
+    src="" kısmına eklemek istediğimiz görselin yolunu,path'ini/kaynağını yazmalıyız.Eğer görselimiz ve HTML dosyamız aynı klasötde ise görselin adını ve uzantısını yazmamız yeterlidir. 
+
+    alt="" kısmına görselin açıklamasını yazıyoruz fakat istersek boş bırakabiliriz.Bu etiket kapanmaya ihtiyaç duymaz
+
+    <iframe> : <iframe> etiketi,belge içinde belge gösterebilmemizi sağlayan etikettir,Genelde başka bir sitedeki br belgeyi sayfamızda göstermek istersek (örn: youtube'dan bir video) <iframe> kodlarını sayfamıza eklememiz yeterli.
+
+    -->
