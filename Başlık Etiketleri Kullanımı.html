@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!--
+
+      Başlık etiketlerimiz <head> </head> etiketleri arasına (head elementi içine) yazılan etiketlerdir.Başlık etiketleri,sayfamızla ilgili ipuçları ve ihtiyacımız olacak dış kaynakları yüklememize yardımcı olur.Yani detay vermek gerekirse,sayfamızın düzenli ve verimli bir şekilde çalışması için hem de sayfanın tanınması,arama motoru optimizasyonu,aramalarda üst sıralarda çıkması için çok önemlidir.
+
+
+
+
+        <title> tarayıcı/sekme başlığı </title> etiketi : 
+        bu etiketimiz html dökümanlarında türkçe anlamı olan başlık görevini üstlenir.Bu başlık,birkaç farklı yerde görülebilir.Bizim de en sık karşılaştığımız şekli ise browser sekmelerinin ismileridir. örnek olarak <title> Kodluyoruzla web Öğreniyorum </title> gibi bir başlık belirlediğimizde sekme isminde kodluyoruzla web öğreniyorum yazdığını görürüz.
+    
+        ** Bu etiket arasına yazdıklarımız aynı zamanda sayfayı favorilere eklerken de karşımıza çıkar.Bu etiket arasına yazılan başlık,favorilere eklerken karşımıza çıkan isimidir.
+
+        **Ayrıca arama motorları sayfamızın <title> </title> etiketine bakarak sitemizi listeler.Bu yüzden de oluşturduğumuz mükemel web sayfalarının insanlara ulaşması için bu alanda yazdıklarımızın açıklayıcı,dikkat çekici ve 50-60 karakteri geçmeyecek şekilde (Arama Motorları genelde başlığın ilk 50-60 karakterini gösterir) yazmamız gerekir.
+    
+
+
+    <script> JavaScript kodları </script>  etiketi : Geldik web dökümanlarının ön yüzlerini "sihirli" hale getiren etikete.Bu etiketle web sayfalarının,browser yardımıyla çalıştırabildiği kodlar yazabiliriz.Sayfamız üzerinde hayal gücümüzle sınırlı her değişikliği yapabilmemizi sağlayan kodlar bu etiketler arasında bulunur. <script> </script> etiketleri html ve css öğrendikten sonra öğreneceğim,sihirli bir dünyaya açılan kapıdır.Normalde HTML dökümanlarının bir programlama dili ile yazılmadığını biliyoruz.Çünkü HTML ve CSS bir programlama dili değildir.Ancak <script> </script> tagları arasına girdiğimizde işler değişmeye başlıyor.Artık bir programlama dili olan JavaScript'in dünyasına girmiş oluyoruz.HTML dökümanlarının stilleri,yerleşimleri hatta bütün dökümanın kendisini JavaScript yardımıyla değiştirebilir,farklı işlemler yapabilir,farklı sayfalara veya arkaplanda bir veritabanıyla haberleşebilir,oradan aldığımız verilerle dökümanımızı güncelleyebiliriz.Ayrıca HTML dökümanımıza yeni elemanlar ekleyip çıkartabiliriz.Dökümanlarımızın üzerinde hareketli animasyonlar çalıştırabilir,her türlü değişikliği yapabiliriz.Bu yüzden bu etiketlerin bizim gücümüzü artıran sihirli bir dünyaya açıldığını söyleyebiliriz.
+
+
+
+                      ******Script Tag Özellikleri********
+                    
+      ** ? Eğer script etiketini kullanırken herhangi bir özellik eklemezsek browser sırası geldiğinde doğrudan işlenir ve bu kısım işlenmeden sayfa yüklenmeye devam etmez bu noktada da "async" özelliği devreye giriyor.Eğer sayfanın yüklenmeye devam ederken eşzamanlı olarak bu etiketlerle belirlediğimiz scriptlerin de yüklenmesini ve hazırlanmasını istiyorsak yani bu kısmın asenkron olarak çalışmasını istiyorsak etiketimize bu özelliği ekliyoruz.Herhangi bir değer girmemize gerek yok,şu şekilde kullanabiliriz:
+      <script src="MyJavaScript.js" async> </script>
+
+
+      
+
+
+
+    -->
+
+    <!-- Link Etiketi -->
+
+    <!--
+    
+<link> </link> etiketi,script etiketinin src özelliği ile kullanılması gibi link etiketini de farklı kaynaklardan farklı kaynaklardan farklı dosyaları html dökümanımıza dahil etmek için kullanabiliriz.Bu etiket dökümanımızda bulunmayan dış kaynaklarla dökümanımız arasında ilişki kurmak için kullanılır.
+    
+bu etikette ilişki kurmak istediğimiz dış kaynağı "href " özelliği ile veriyoruz.Bu özelliğin açılımı; Hypertext Referance şeklindedir
+
+
+<link rel ="stylesheet" href="https://falanfilan.com">
+
+
+href özelliğini hem dış kaynaklardan hem de dökümanımızın bulunduğu dosyadan ilişkilendirme yapmak için kullanabiliriz.
+
+
+bu etiketin önemli özelliklerinde birisi de rel özelliğidir.Bu özellik dış kaynaktaki dosyayı kendi html dökümanımıza ne şekilde ilişkilendirmek istediğimizi belirttiğimiz kısımdır.En çok kullanılan deperler "stylesheet" ve "icon" dur.
+
+Stylesheet eklemek istediğimiz zaman dosyanın bir stil dosyası olduğunu söyler.Böylece browser oradaki komutları HTML'imizi şekillendirmede ve değiştirmede kullanır.
+
+
+
+
+
+                            *******META ETİKETİ*********
+
+Meta veriler,bilgisayar bilimleri dünyasında genellikle verinin verisi anlamında kullanılır.Yani bir veriyle ilgili bilgiler meta bilgiler olarak tanımlanır.İşte HTML dökümanımızla ilgili verilerin olduğu etiketler de meta etiketleridir.Burada vereceğimiz bilgiler sitemizi arama motorlarına,sosyal medyaya ve diğer sitelere tanıtmak ve dökümanımızla ilgili bilgiler vermek için kullanılacak veriler olacak.
+
+Sadece 4 farklı özelliği olan meta elementi dökümanımızla ilgili birçok bilgiyi barındıran farklı kullanım şekillerine sahip.Bu kullanımlar sayfamızla ilgili önemli bilgiler içerdiği için ayrı ayrı inceleyeceğiz
+
+meta etiketimizin charset özelliği ile farklı ülkelere ait farklı alfabelerin browser tarafından doğru bir şekilde algılanmasını sağlamak için,içeriği ürettiğimiz dilin charset kodunu belirtmemizi sağlar.
+
+
+bir diğer önemli meta özelliği ise "http-equiv"'dir.Browserlar farklı sunuculara istek atarlarken belli bilgileri karşı tarafa gönderirler.İşte bu isteklerin arasında istediğin detaylarıyla ve yöntemiyle ilgili bilgilerin olduğu headerler bulunur.Biz de dökümanımızda o dökümana ulaşan birisinin browserinde header alanında bir bilgi tutmak istiyorsak bu meta etiketi özelliğini kullanabiliriz.Örnek olarak charset ile belirttiğimiz özellik html5 ile gelmiştir.
+
+Ayrıca refresh başlığını bu meta yardımıyla belirleyerek sayfamızın belli sürede bir yenilenmesini veya belli bir süre sonra başka bir sayfaya yönlendirilmesini sağlayabiliriz.
+
+<meta http-equiv="refresh" content="10;URL=kodluyoruz.html">
+yukarıdaki kodda sayfa yüklendikten 10 sn sonra URL ile verdiğimiz değer olan kodluyoruz.html'e yönlendirecek.
+
+burada kullandığımız bir diğer etiket de content etiketidir.Bu da meta olarak verdiğimiz bilgilerin içeriğini tanımlamamızı sağlar.
+
+son özelliğimiz name özelliğidir.bu da meta bilgi olarak vereceğimiz bilginin tanımlayıcısıdır diyebiliriz.
+
+
+Ayrıca arama motorlarında sayfa başlığının altındaki açıklamarda da yine meta verilerine öncelik verilir ; <meta name="description" content="site açıklaması">
+
+Bazı arama sonuçlarında sitelerde yazar ismi görürüz aha o da meta tagı sayesinde 
+<meta name="author" content="yazar_Adi">
+
+
+Meta etiketleriyle alakalı olarak son şey viewport'dur.Akıllı telefonlarla beraber geliştiriciler artık farklı cihazlara,farklı cihaz ekranlarında düzgün görünen kodlar yazmaya çalışıyor.Her ekranın genişliği,boyutları farklı olduğu için tek bir ekran türüne göre tasarım ve kodlama yapmak da bu sorunu çözmüyorBu yüzden farklı cihazlarda da iyi görünen siteler yapmak için temel görünen alanı,bu alanın genişliğini falan tanımlamamız gerekiyor
+
+<meta name ="viewport" content="width=device-width,initial scale=1.0">
+
+yukarıdaki kodda genişliğin cihaz genişliğinde olduğunu ve zoom oranının 1.0 olacağı tarayıcıya belirtmiş oluyoruz.Böylece mobilde masaüstü görünümlü bir görünüm değil cihazın ekran boyutuna ve çözünürlüğüne olan bir görüntü elde etmiş oluyoruz.
+
+<meta charset ="UTF-8"> 
+
+-->
+  </head>
+  <body></body>
+</html>
